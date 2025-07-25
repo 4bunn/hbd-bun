@@ -702,47 +702,67 @@ body {
 
 /* Mobile responsiveness */
 @media (max-width: 600px) {
+  .candle-count-display {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    padding: 4px;
+  }
+  .cake {
+    top: 90px;
+    left: 50%;
+    margin-top: 0;
+    margin-left: -125px;
+    position: relative;
+  }
+  .miffy-image {
+    margin-top: 120px;
+    width: 140px;
+    height: auto;
+  }
+  .footer {
+    font-size: 12px;
+    padding: 6px 0;
+  }
   .memory-lane-section {
-    padding: 0;
-    max-width: 100vw;
-    max-height: 100vh;
-  }
-  .memory-lane-gallery {
-    gap: 10px;
-    padding: 8px 0;
-    max-width: 99vw;
-  }
-  .memory-item {
-    width: clamp(70px, 30vw, 120px);
-    padding: clamp(4px, 2vw, 10px);
-  }
-  .memory-item img {
-    height: clamp(36px, 14vw, 85px);
-  }
-  .caption {
-    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    padding-top: 10px;
+    justify-content: flex-start;
+    align-items: center;
   }
   .memory-lane-section h2 {
-    font-size: clamp(1rem, 5vw, 1.5rem);
-    margin-bottom: clamp(8px, 2vw, 15px);
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+  }
+  .memory-lane-gallery {
+    max-height: 70vh;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 @media (max-width: 480px) {
+  .candle-count-display {
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+  .cake {
+    top: 60px;
+    margin-top: 0;
+  }
+  .miffy-image {
+    margin-top: 80px;
+    width: 110px;
+  }
+  .memory-lane-section {
+    padding-top: 0;
+  }
   .memory-lane-section h2 {
-    font-size: 1.5rem;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 1rem;
   }
-  
-  .memory-item {
-    width: 120px;
-    padding: 10px;
-  }
-  
-  .memory-item img {
-    height: 85px;
-  }
-  
-  .caption {
-    font-size: 0.8rem;
+  .memory-lane-gallery {
+    max-height: 72vh;
   }
 }
